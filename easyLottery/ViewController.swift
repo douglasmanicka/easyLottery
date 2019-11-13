@@ -22,6 +22,11 @@ func >-< (total: Int, universe:Int ) -> [Int] {
 
 class ViewController: UIViewController {
     
+    //change status bar color to white
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     enum GameType: String {
         case megasena = "Mega-Sena"
         case quina = "Quina"
